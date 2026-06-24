@@ -95,10 +95,11 @@ A dataset.yaml file is used to define:
 * Augmentations
 
 Example:
-
+```
 path: dataset
 train: images/train
 val: images/val
+```
 
 names:
 0: person
