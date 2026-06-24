@@ -23,7 +23,6 @@
 - [Applications](#applications)
 - [Key Takeaways](#key-takeaways)
 - [Resources & References](#resources--references)
-- [Conclusion](#conclusion)
 
 ---
 
