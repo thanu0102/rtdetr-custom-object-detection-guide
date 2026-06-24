@@ -43,6 +43,19 @@ For every image:
 * Assign the correct class label.
 * Save annotations in YOLO format.
 
+## Annotation Format
+
+Annotations must be saved as `.txt` files (one per image) in YOLO format: <class_id> <x_center> <y_center> <width> <height>
+   
+Where coordinates are normalized (0-1) relative to image dimensions.
+
+Example `image.txt`:
+```
+0 0.45 0.50 0.30 0.40
+
+1 0.75 0.65 0.15 0.25
+```
+
 ## Dataset Split
 
 The dataset should be divided into:
@@ -55,10 +68,7 @@ This helps evaluate how well the model generalizes to unseen data.
 
 ## Dataset Structure
 
-The dataset must use the Horizontal Bounding Box (HBB) format. Using any other format will lead to:
-* Poor model accuracy
-* Incorrect evaluation results
-* Complete failure of the training methodology 
+The dataset should use the Horizontal Bounding Box (HBB) format. Other formats (rotated boxes, polygons) are not supported and will cause training failures.
 
 Example directory structure:
 
@@ -96,25 +106,26 @@ A dataset.yaml file is used to define:
 
 Example:
 ```
-path: dataset
-train: images/train
-val: images/val
-
-
-names:
-0: person
-1: vehicle
-2: road
-3: pedestrian 
-
-degrees: 10.0      # Rotate image by +/- 10 degrees
-translate: 0.1     # Translate image horizontally/vertically by +/- 10%
-scale: 0.5         # Scale image by +/- 50%
-shear: 2.0         # Shear image by +/- 2 degrees
-flipud: 0.0        # Probability of flipping image upside down
-fliplr: 0.5  
+path: /path/to/dataset
+   train: images/train
+   val: images/val
+   test: images/test
+   
+   nc: 4  # Number of classes
+   names: ['person', 'vehicle', 'road', 'pedestrian']
+   
+   # Augmentations (optional for RT-DETR)
+   degrees: 10.0
+   translate: 0.1
+   scale: 0.5
+   flipud: 0.0
+   fliplr: 0.5
 ```
 
 ## Conclusion
 
 Proper data collection, annotation, and dataset organization are essential for obtaining high-quality RT-DETR detection results.
+
+## Note
+
+RT-DETR uses the same YOLO-format dataset structure as YOLO, making it easy to switch between detectors without reformatting your data.
