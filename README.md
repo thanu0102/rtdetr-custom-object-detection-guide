@@ -50,6 +50,19 @@ pip install -r requirements.txt
 - Evaluation metrics
 - Deployment workflow
 
+## Documentation
+
+- Understanding RT-DETR Architecture
+- Dataset Preparation Guide
+- Training Guide
+- Inference Guide
+
+## Tutorial Notebook
+
+The complete workflow is available in:
+
+notebooks/RTDETR_Tutorial.ipynb
+
 ## Future Improvements
 
 - Video inference
@@ -60,3 +73,4 @@ pip install -r requirements.txt
 
 - RT-DETR Paper
 - Ultralytics Documentation
+
