@@ -30,9 +30,9 @@
 
 **RT-DETR** is a real-time transformer-based object detector developed by Baidu that combines the best of both worlds:
 
-- ✅ DETR's elegant **end-to-end, NMS-free approach**
-- ✅ Real-time inference speed **rivaling YOLOv8**
-- ✅ Superior accuracy in **crowded scenes** with global context understanding
+- DETR's elegant **end-to-end, NMS-free approach**
+- Real-time inference speed **rivaling YOLOv8**
+- Superior accuracy in **crowded scenes** with global context understanding
 
 **Key Performance Metric**: 
 - **RT-DETR-R50**: 53% AP @ 108 FPS (T4 GPU)
@@ -321,14 +321,14 @@ RT-DETR's end-to-end approach is:
 
 ### 4. Perfect for Accuracy-Critical Real-Time Apps
 Choose RT-DETR when:
-- ✅ Accuracy matters (medical, autonomous driving, surveillance)
-- ✅ Real-time is required (streaming video)
-- ✅ GPU is available (cloud, edge servers)
+- Accuracy matters (medical, autonomous driving, surveillance)
+- Real-time is required (streaming video)
+- GPU is available (cloud, edge servers)
 
 Avoid RT-DETR when:
-- ❌ CPU-only inference needed
-- ❌ Model size is critical (edge devices with limited RAM)
-- ❌ Inference speed is paramount above all else
+- CPU-only inference needed
+- Model size is critical (edge devices with limited RAM)
+- Inference speed is paramount above all else
 
 ### 5. Understanding "Why" Matters for Interviews
 This knowledge is crucial for:
@@ -380,12 +380,4 @@ As research continues (e.g., RT-DETRv2/v3 improvements), RT-DETR and its descend
 
 **For recruiters**: This knowledge demonstrates deep technical understanding of modern object detection, architectural design trade-offs, and practical ML engineering—skills essential for competitive AI/ML engineering roles.
 
----
 
-## License
-
-This documentation is part of my portfolio. Feel free to reference it for learning purposes.
-
----
-
-**Last Updated**: June 2026 | **Status**: Portfolio Document
