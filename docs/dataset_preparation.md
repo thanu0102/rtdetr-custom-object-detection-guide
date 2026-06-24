@@ -62,6 +62,7 @@ The dataset must use the Horizontal Bounding Box (HBB) format. Using any other f
 
 Example directory structure:
 
+```
 dataset/
 
 ├── train/
@@ -81,13 +82,6 @@ dataset/
 │   ├── images/
 
 │   ├── labels/
-
-```
-├── train/
-
-├── val/
-
-└── test/
 ```
 
 ## Dataset Configuration
