@@ -99,7 +99,7 @@ Example:
 path: dataset
 train: images/train
 val: images/val
-```
+
 
 names:
 0: person
@@ -113,6 +113,7 @@ scale: 0.5         # Scale image by +/- 50%
 shear: 2.0         # Shear image by +/- 2 degrees
 flipud: 0.0        # Probability of flipping image upside down
 fliplr: 0.5  
+```
 
 ## Conclusion
 
