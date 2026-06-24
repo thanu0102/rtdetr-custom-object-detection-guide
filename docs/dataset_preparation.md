@@ -13,7 +13,7 @@ Data can be collected from:
 * Internet sources
 * Existing image repositories
 
-In many practical scenarios, videos are converted into image frames and used for annotation.
+During real-world object detection projects, video footage is often converted into frames and manually reviewed before annotation. Removing blurry and redundant frames improves dataset quality and reduces labeling effort.
 
 ## Frame Extraction
 
