@@ -22,7 +22,7 @@
 - [Practical Implementation](#practical-implementation)
 - [Applications](#applications)
 - [Key Takeaways](#key-takeaways)
-- [Resources](#resources)
+- [Resources & References](#resources-&-references)
 
 ---
 
