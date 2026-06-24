@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 The complete workflow is available in:
 
-notebooks/RTDETR_Tutorial.ipynb
+'notebooks/RTDETR_Tutorial.ipynb'
 
 ## Future Improvements
 
