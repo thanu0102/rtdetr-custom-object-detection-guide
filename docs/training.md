@@ -121,3 +121,7 @@ Typical outputs include:
 ## Conclusion
 
 Training RT-DETR on a high-quality dataset with appropriate hyperparameters can produce accurate and efficient object detection models suitable for real-world applications.
+
+## Practical Notes
+
+In object detection projects, annotation quality often has a greater impact on performance than increasing the number of training epochs. Consistent labeling and removal of low-quality images can significantly improve mAP.
