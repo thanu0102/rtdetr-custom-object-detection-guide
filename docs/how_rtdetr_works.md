@@ -1,6 +1,6 @@
 ## HOW RT-DETR WORKS: REAL-TIME DETECTION TRANSFORMER
 
-1. INTRODUCTION TO OBJECT DETECTION
+## INTRODUCTION TO OBJECT DETECTION
 
 Object detection is a fundamental computer vision task that involves identifying and localizing objects within an image or video frame. It goes beyond simple image classification by predicting both the class (e.g., "car", "person") and the precise bounding box coordinates for each detected instance.
 
@@ -9,7 +9,7 @@ Traditional approaches like Faster R-CNN rely on region proposals and Non-Maximu
 Transformers introduced a new paradigm with DETR, promising end-to-end training without these heuristics. RT-DETR builds on this foundation to deliver real-time performance while retaining transformer advantages.
 
 
-2. WHAT IS DETR?
+## WHAT IS DETR?
 
 DETR (Detection Transformer), introduced in 2020, reframes object detection as a set prediction problem. It uses a CNN backbone (typically ResNet) to extract features, flattens them into a sequence, and feeds them into a Transformer encoder-decoder architecture.
 
@@ -24,7 +24,7 @@ Transformer Decoder: Iteratively refines queries via self-attention (between que
 DETR eliminates many hand-designed components, captures global context effectively, and simplifies pipelines. However, it was not suitable for real-time use.
 
 
-3. LIMITATIONS OF DETR
+## LIMITATIONS OF DETR
 
 Despite its elegance, original DETR had significant drawbacks:
 
@@ -41,7 +41,7 @@ Not Real-Time: Inference speeds were far below YOLO models on similar hardware.
 These issues limited DETR's practicality, prompting variants like Deformable DETR, but real-time performance remained elusive until RT-DETR.
 
 
-4. WHAT IS RT-DETR?
+## WHAT IS RT-DETR?
 
 RT-DETR (Real-Time Detection Transformer), developed by Baidu and released in 2023, is the first transformer-based object detector to achieve true real-time performance while outperforming YOLO models in accuracy and speed on benchmarks like COCO.
 
@@ -54,7 +54,7 @@ It maintains DETR's end-to-end, NMS-free nature but introduces efficiency-focuse
 RT-DETR-R50 achieves ~53% AP at 108 FPS on a T4 GPU, surpassing contemporary YOLOs. Subsequent versions like RT-DETRv2 further improve this balance.
 
 
-5. RT-DETR ARCHITECTURE
+## RT-DETR ARCHITECTURE
 
 RT-DETR consists of three core components:
 
@@ -79,7 +79,7 @@ Transformer Decoder with Query Selection:
 The architecture supports dynamic adjustment of decoder layers at inference for different speed requirements.
 
 
-6. ADVANTAGES OF RT-DETR
+## ADVANTAGES OF RT-DETR
 
 - End-to-End and NMS-Free: Simplifies deployment, avoids NMS tuning issues, and handles overlapping objects better.
 
@@ -94,7 +94,7 @@ The architecture supports dynamic adjustment of decoder layers at inference for 
 - Scalability: Variants (small to large) and easy integration (e.g., in Ultralytics).
 
 
-7. COMPARISON WITH YOLO
+## COMPARISON WITH YOLO
 
 YOLO models (e.g., YOLOv8, YOLO11) are CNN-based, single-stage detectors optimized for speed via grid predictions, anchors (in older versions), and NMS.
 
@@ -114,7 +114,7 @@ Strengths of YOLO:
 RT-DETR shines in accuracy-critical real-time applications (e.g., autonomous driving), while YOLO remains strong for ultra-low latency or resource-constrained setups. Transformers like RT-DETR represent a paradigm shift, closing the gap and sometimes surpassing CNNs.
 
 
-8. APPLICATIONS
+## APPLICATIONS
 
 RT-DETR is ideal for scenarios demanding both speed and precision:
 
@@ -126,7 +126,7 @@ RT-DETR is ideal for scenarios demanding both speed and precision:
 - Agriculture and UAVs: Crop/livestock monitoring, aerial surveying
 
 
-9. CONCLUSION
+## CONCLUSION
 
 RT-DETR demonstrates that transformers can excel in real-time object detection by cleverly balancing efficiency and power through hybrid designs and smart query mechanisms. It bridges the gap between elegant end-to-end learning and practical deployment needs, challenging the long dominance of CNN-based detectors like YOLO.
 
