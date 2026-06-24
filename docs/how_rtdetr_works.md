@@ -359,19 +359,6 @@ This knowledge is crucial for:
 
 ---
 
-## See It In Action
-
-Check out my **[Traffic Sign Detection Project](../traffic_sign_detection/)** where I applied RT-DETR to real-world highway video streams.
-
-**Results**:
-- 94% mAP on custom dataset
-- 35 FPS on Jetson Nano
-- Outperformed YOLOv8n by 7% accuracy with same latency
-
-This demonstrates how understanding RT-DETR's architecture translates to practical, production-ready deployments.
-
----
-
 ## Conclusion
 
 RT-DETR demonstrates that transformers can excel in real-time object detection by cleverly balancing efficiency and power through **hybrid designs** and **smart query mechanisms**. It bridges the gap between elegant end-to-end learning and practical deployment needs, challenging the long dominance of CNN-based detectors like YOLO.
