@@ -349,10 +349,6 @@ This knowledge is crucial for:
 - [DETR: End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12677)
 - [Deformable DETR](https://arxiv.org/abs/2010.04159)
 
-### My Implementation
-- [Traffic Sign Detection with RT-DETR](../traffic_sign_detection/) — Real-world project achieving 94% mAP
-- [Comparative Benchmark: RT-DETR vs YOLOv8](../benchmarks/) — Performance metrics on custom datasets
-
 ### Hands-On Learning
 - Try RT-DETR on Roboflow: https://roboflow.com/
 - Ultralytics Hub: https://hub.ultralytics.com/
